@@ -16,7 +16,7 @@ const Navbar = () => {
         <Hamburger toggled={nav} toggle={setNav} size={30} duration={0.5}/>
         </div>
 
-        <div className={nav ? "z-40 block md:hidden fixed right-0 top-0 text-right w-[50%] border-l border-l-gray-900 h-full pt-24 ease-out duration-500 bg-[#000300] bg-opacity-80" : "z-40 block md:hidden fixed top-0 text-right w-[50%] border-l border-l-gray-900 h-full pt-24 right-[-100%] ease-in duration-500 bg-[#000300] bg-opacity-80"}>
+        <div className={nav ? "z-40 block md:hidden fixed right-0 top-0 text-right w-[50%] border-l border-l-white border-opacity-10 h-full pt-24 ease-out duration-500 bg-[#000300] bg-opacity-80" : "z-40 block md:hidden fixed top-0 text-right w-[50%] border-l border-l-white border-opacity-10 h-full pt-24 right-[-100%] ease-in duration-500 bg-[#000300] bg-opacity-80"}>
         <ul className="uppercase p-4">
             <li className=" p-4 border-b border-b-gray-600"> Home </li>
             <li className=" p-4 border-b border-b-gray-600"> Projects </li>
