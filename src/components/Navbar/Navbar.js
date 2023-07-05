@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { Squash as Hamburger } from 'hamburger-react'
 const Navbar = () => {
+      
     const [nav,setNav] = useState(false);
     return <div className=" md:bg-[#000300] md:bg-opacity-80 w-full md:border-b border-b-white border-opacity-10 ">
     <div id="nav" className="flex justify-between items-center h-28 max-w-[1240px] mx-auto px-4 text-white text-md md:text-xl z-40">
