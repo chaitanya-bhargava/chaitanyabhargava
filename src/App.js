@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback} from "react";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -22,6 +23,7 @@ function App() {
   }, []);
   return (
     <div id="app">
+      <Toaster/>
       <Particles
         className=" fixed -z-50"
         id="tsparticles"
@@ -98,7 +100,7 @@ function App() {
       />
       <Navbar />
       <Hero />
-      {/* <Projects /> */}
+      <Projects />
       <Contact />
       <Footer />
     </div>

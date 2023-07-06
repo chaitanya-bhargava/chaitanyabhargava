@@ -4,24 +4,29 @@ const Projects = () => {
   const projects = [
     {
       title: "Media Player",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      websiteLink: true,
+      desc: "Fully responsive React App built using the concepts of React, React Router, Redux and Firebase is used as a Backend and for Authentication. A user can store and play their favourite youtube videos through this application and also look at the videos played in the past.",
+      website: true,
+      websiteLink: "https://media-player-react-app.vercel.app/",
+      githubLink: "https://github.com/chaitanya-bhargava/MediaPlayerApp",
     },
     {
-      title: "Media Player 2",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      websiteLink: true,
+      title: "Rick and Morty Wiki",
+      desc: "Fully responsive multi-page React web app which uses Rest API to fetch info about the characters, locations and episodes of the popular show Rick and Morty.",
+      website: true,
+      websiteLink: "https://rick-and-morty-react-gules.vercel.app/",
+      githubLink: "https://github.com/chaitanya-bhargava/RickAndMortyReact",
     },
     {
-      title: "Media Player 3",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      websiteLink: false,
+      title: "Instagram Clone App",
+      desc: "I created an Instagram clone app written in Jetpack Compose with all the concepts taught to us in various lectures held by the GDSC NSUT team. Jetpack Compose is an upcoming toolkit in Kotlin used for building native UI for apps.",
+      website: false,
+      githubLink: "https://github.com/chaitanya-bhargava/InstagramClone",
     },
   ];
   return (
     <div id="projects" className="flex flex-col items-center text-white">
       <p className="text-4xl font-bold uppercase p-4 m-4">Projects</p>
-      <div className="">
+      <div className="grid md:block">
         {projects.map((item) => {
           return (
             <Tilt
@@ -29,23 +34,33 @@ const Projects = () => {
               tiltMaxAngleY={10}
               scale={1}
               perspective={4000}
-              className="flex h-[40vh] w-[80%] mx-auto bg-white rounded-lg bg-opacity-[0.05] justify-center border border-white border-opacity-20 items-center p-2 m-6"
+              className="relative flex flex-col md:flex-row h-auto md:h-[250px] lg:h-[300px] w-[90%] md:w-[95%] max-w-[1400px] mx-auto bg-white rounded-lg bg-opacity-[0.05] justify-center border border-white border-opacity-20 items-center p-2 m-6"
               transitionSpeed={800}
             >
               <img
                 src="proj1.png"
-                className="h-[80%] m-4 rounded-2xl z-50"
+                className="h-auto md:h-[180px] lg:h-[250px] m-2 md:m-4 rounded-2xl z-50"
                 alt="thumb"
               />
-              <div className="flex flex-col z-50">
-                <h3 className=" text-2xl font-bold">{item.title}</h3>
-                <p className="w-[90%] my-2">{item.desc}</p>
-                <div className="flex items-center">
-                  <FaGithubSquare className="cursor-pointer" size={65} />
-                  {item.websiteLink && (
+              <div className=" flex flex-col justify-start z-50">
+                <h3 className="my-2 md:mb-1 lg:mb-2 text-l md:text-l min-[600px]:text-2xl lg:text-2xl font-bold">{item.title}</h3>
+                <p className="w-full h-[110px] md:h-[120] md:w-[90%] text-sm min-[600px]:text-base md:text-sm lg:text-base md:mb-5 lg:mb-20">{item.desc}</p>
+                <div className={`md:absolute ${item.website ? "md:bottom-2" : "my-3 md:bottom-3"}  flex justify-center md:justify-normal items-center`}>
+                  <a
+                    href={item.githubLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithubSquare
+                      className="cursor-pointer hover:scale-110 duration-500 w-[45px] h-[45px] lg:w-[65px] lg:h-[65px]"
+                    />
+                  </a>
+                  {item.website && (
                     <a
-                      href="#projects"
-                      class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#A8A29C] rounded-lg group p-3 m-4"
+                      href={item.websiteLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      class="relative text-xs lg:w-[180px] lg:text-base inline-flex items-center justify-center px-8 py-3 lg:px-10 lg:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#A8A29C] rounded-lg group m-4 hover:scale-110 duration-500 cursor-pointer"
                     >
                       <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#846D62] rounded-full group-hover:w-56 group-hover:h-56"></span>
                       <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>

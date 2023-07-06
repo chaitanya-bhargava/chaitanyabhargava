@@ -30,20 +30,20 @@ const Hero = () => {
         <div className="flex items-center mt-6">
           <Link
             to="projects" spy={true} smooth={true} offset={0} duration={700}
-            className="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#A8A29C] rounded-lg group p-3 m-4 cursor-pointer text-xs xs:text-sm md:text-base"
+            className="relative inline-flex items-center justify-center px-8 py-3 xs:px-10 xs:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#A8A29C] rounded-lg group m-4 cursor-pointer text-xs xs:text-sm md:text-base hover:scale-110 duration-500"
           >
             <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#846D62] rounded-full group-hover:w-56 group-hover:h-56"></span>
             <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
             <span class="relative">My Projects</span>
           </Link>
-          <a
-            href="#projects"
-            className="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#A8A29C] rounded-lg group p-3 m-4 cursor-pointer text-xs xs:text-sm md:text-base"
+          <Link
+            to="projects"
+            className="relative inline-flex items-center justify-center px-8 py-3 xs:px-10 xs:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#A8A29C] rounded-lg group m-4 cursor-pointer text-xs xs:text-sm md:text-base hover:scale-110 duration-500"
           >
             <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#846D62] rounded-full group-hover:w-56 group-hover:h-56"></span>
             <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
             <span class="relative">About Me</span>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="flex flex-col w-[60%] md:w-auto">
@@ -52,7 +52,7 @@ const Hero = () => {
           alt="chaitanya"
           className="w-[70%] md:w-full max-w-[400px] mx-auto hidden md:block"
         />
-        <div className="flex p-4 mt-4 justify-evenly items-center">
+        <div className="flex p-4 mt-4 justify-evenly items-center -ml-4">
           <a
             href="https://github.com/chaitanya-bhargava"
             target="_blank"

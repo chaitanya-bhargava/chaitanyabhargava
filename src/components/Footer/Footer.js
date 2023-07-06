@@ -6,6 +6,8 @@ import {
   AiOutlinePhone,
 } from "react-icons/ai";
 import { TfiLocationPin } from "react-icons/tfi";
+import { Link } from "react-scroll";
+
 const Footer = () => {
   return (
     <div className="text-white flex flex-col md:flex-row justify-evenly bg-[#000300] bg-opacity-80 h-[100vh] md:h-auto border-t border-t-white border-opacity-10 max-w-full mx-auto p-4">
@@ -16,16 +18,50 @@ const Footer = () => {
       />
       <div className="flex flex-col mt-2 md:mt-6">
         <p className="text-md xs:text-lg font-bold p-2">Explore</p>
-        <p className="text-sm xs:text-md p-2">Home</p>
-        <p className="text-sm xs:text-md p-2">Projects</p>
-        <p className="text-sm xs:text-md p-2">About</p>
-        <p className="text-sm xs:text-md p-2">Contact</p>
+        <Link
+          to="nav"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={700}
+        >
+        <p className="cursor-pointer text-sm xs:text-md p-2">Home</p>
+        </Link>
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={700}
+        >
+        <p className="cursor-pointer text-sm xs:text-md p-2">Projects</p>
+        </Link>
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={700}
+        >
+        <p className="cursor-pointer text-sm xs:text-md p-2">About</p>
+        </Link>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={700}
+        >
+        <p className="cursor-pointer text-sm xs:text-md p-2">Contact</p>
+        </Link>
       </div>
       <div className="flex flex-col mt-2 md:mt-6">
         <p className="text-md xs:text-lg font-bold p-2">Contact</p>
         <div className="flex items-center p-2">
           <AiOutlineMail color="white" />
-          <p className="text-sm xs:text-md pl-2">chaitanyabhargava5@gmail.com</p>
+          <p className="text-sm xs:text-md pl-2">
+            chaitanyabhargava5@gmail.com
+          </p>
         </div>
         <div className="flex items-center p-2">
           <AiOutlinePhone color="white" />
