@@ -25,7 +25,7 @@ const Footer = () => {
           offset={0}
           duration={700}
         >
-        <p className="cursor-pointer text-sm xs:text-md p-2">Home</p>
+        <p className="cursor-pointer text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">Home</p>
         </Link>
         <Link
           to="about"
@@ -34,7 +34,7 @@ const Footer = () => {
           offset={0}
           duration={700}
         >
-        <p className="cursor-pointer text-sm xs:text-md p-2">About</p>
+        <p className="cursor-pointer text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">About</p>
         </Link>
         <Link
           to="projects"
@@ -43,7 +43,7 @@ const Footer = () => {
           offset={0}
           duration={700}
         >
-        <p className="cursor-pointer text-sm xs:text-md p-2">Projects</p>
+        <p className="cursor-pointer text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">Projects</p>
         </Link>
         <Link
           to="contact"
@@ -52,7 +52,7 @@ const Footer = () => {
           offset={0}
           duration={700}
         >
-        <p className="cursor-pointer text-sm xs:text-md p-2">Contact</p>
+        <p className="cursor-pointer text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">Contact</p>
         </Link>
       </div>
       <div className="flex flex-col mt-2 md:mt-6">

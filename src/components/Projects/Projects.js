@@ -29,7 +29,7 @@ const Projects = () => {
   ];
   return (
     <div id="projects" className="flex flex-col items-center text-white">
-      <p className="text-2xl md:text-4xl font-bold uppercase p-4 m-4">Projects</p>
+      <p className="text-2xl diff-font md:text-4xl font-bold uppercase p-4 m-4">Projects</p>
       <div className="grid md:block">
         {projects.map((item) => {
           return (
@@ -39,7 +39,7 @@ const Projects = () => {
               tiltMaxAngleY={10}
               scale={1}
               perspective={4000}
-              className="relative flex flex-col md:flex-row h-auto md:h-[250px] lg:h-[300px] w-[90%] md:w-[95%] max-w-[1400px] mx-auto bg-white rounded-lg bg-opacity-[0.05] justify-center border border-white border-opacity-20 items-center p-2 m-6"
+              className="relative flex flex-col md:flex-row h-auto md:h-[250px] lg:h-[300px] w-[90%] md:w-[95%] max-w-[1400px] mx-auto bg-[#7EC8E3] rounded-lg bg-opacity-[0.1] justify-center border border-white border-opacity-20 items-center p-2 m-6"
               transitionSpeed={800}
               >
               <img
@@ -50,7 +50,7 @@ const Projects = () => {
               <div className=" flex flex-col justify-start z-50">
                 <h3 className="my-2 md:mb-1 lg:mb-2 text-l md:text-l min-[600px]:text-2xl lg:text-2xl font-bold">{item.title}</h3>
                 <p className="w-full h-[110px] md:h-[120] md:w-[90%] text-sm min-[600px]:text-base md:text-sm lg:text-base md:mb-5 lg:mb-20">{item.desc}</p>
-                <div className={`md:absolute ${item.website ? "md:bottom-2" : "my-3 md:bottom-3"}  flex justify-center md:justify-normal items-center`}>
+                <div className={`md:absolute ${item.website ? "md:bottom-2" : "my-3 md:bottom-3"}  flex justify-center md:justify-bold items-center`}>
                   <a
                     href={item.githubLink}
                     target="_blank"

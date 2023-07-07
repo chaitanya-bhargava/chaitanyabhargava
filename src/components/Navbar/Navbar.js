@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className=" md:bg-[#000300] md:bg-opacity-80 w-full md:border-b border-b-white border-opacity-10">
       <div
         id="nav"
-        className="flex justify-between items-center h-28 max-w-[1240px] mx-auto px-4 text-white text-md md:text-xl z-40"
+        className="flex justify-between items-center h-28 max-w-[1240px] mx-auto px-4 text-white font-normal text-md md:text-xl z-40"
       >
         <img
           src="logo2.png"
@@ -17,7 +17,7 @@ const Navbar = () => {
         <ul className=" uppercase hidden md:flex">
           {/* <Link to="nav" spy={true} smooth={true} offset={0} duration={700}><li className=" p-4 cursor-pointer"> Home </li></Link>  */}
           <Link to="about" spy={true} smooth={true} offset={0} duration={700}>
-            <li className=" p-4 cursor-pointer"> About </li>
+            <li className=" p-4 cursor-pointer hover:text-[#7EC8E3] duration-400"> About </li>
           </Link>
           <Link
             to="projects"
@@ -26,10 +26,10 @@ const Navbar = () => {
             offset={0}
             duration={700}
           >
-            <li className=" p-4 cursor-pointer"> Projects </li>
+            <li className=" p-4 cursor-pointer hover:text-[#7EC8E3] duration-400"> Projects </li>
           </Link>
           <Link to="contact" spy={true} smooth={true} offset={0} duration={700}>
-            <li className=" p-4 cursor-pointer"> Contact </li>
+            <li className=" p-4 cursor-pointer hover:text-[#7EC8E3] duration-400"> Contact </li>
           </Link>
         </ul>
         <div className="z-50 cursor-pointer block md:hidden">
@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link to="about" spy={true} smooth={true} offset={0} duration={700} onClick={()=>{
                 setNav(false);
               }}>
-              <li className="cursor-pointer p-4 border-b border-b-gray-600"> About </li>
+              <li className="cursor-pointer p-4 border-b border-b-gray-600 hover:text-[#7EC8E3] duration-400"> About </li>
             </Link>
             <Link
               to="projects"
@@ -60,7 +60,7 @@ const Navbar = () => {
                 setNav(false);
               }}
             >
-              <li className="cursor-pointer p-4 border-b border-b-gray-600"> Projects </li>
+              <li className="cursor-pointer p-4 border-b border-b-gray-600 hover:text-[#7EC8E3] duration-400"> Projects </li>
             </Link>
             <Link
               to="contact"
@@ -72,7 +72,7 @@ const Navbar = () => {
                 setNav(false);
               }}
             >
-              <li className="cursor-pointer p-4 border-b border-b-gray-600"> Contact </li>
+              <li className="cursor-pointer p-4 border-b border-b-gray-600 hover:text-[#7EC8E3] duration-400"> Contact </li>
             </Link>
           </ul>
         </div>

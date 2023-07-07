@@ -30,7 +30,7 @@ const Contact = () => {
   };
   return (
     <div id="contact" className="flex flex-col items-center m-4">
-      <p className="text-white font-bold text-2xl md:text-4xl uppercase p-4 m-4">
+      <p className="text-white diff-font font-bold text-2xl md:text-4xl uppercase p-4 m-4">
         Contact
       </p>
       <form
@@ -39,7 +39,7 @@ const Contact = () => {
         className="flex flex-col items-center w-[90%] md:w-[80%] lg:w-[50%] bg-[#000300] bg-opacity-80 border border-white border-opacity-10 mx-auto p-6 m-4 rounded-xl"
       >
         <div className="flex justify-center items-center">
-          <p className="text-white font-bold text-l xs:text-2xl md:text-3xl p-1 m-1 xs:p-4 xs:m-4">
+          <p className="text-white font-normal text-l xs:text-2xl md:text-3xl p-1 m-1 xs:p-4 xs:m-4">
             Send me a message
           </p>
           <RiMessage2Fill
