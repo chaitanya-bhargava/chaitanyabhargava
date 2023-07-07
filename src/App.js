@@ -56,7 +56,7 @@ function App() {
               value: "#000000",
             },
           },
-          fpsLimit: 120,
+          fpsLimit: 60,
           interactivity: {
             events: {
               onClick: {
@@ -116,7 +116,7 @@ function App() {
               value: { min: 1, max: 5 },
             },
           },
-          detectRetina: true,
+          detectRetina: false,
         }}
       />
       <Navbar />

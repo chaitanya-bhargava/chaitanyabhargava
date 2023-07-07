@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 const About = () => {
   return (
     <div
@@ -11,26 +12,101 @@ const About = () => {
           Me
         </p>
         <p className="w-full xs:w-[60%] md:w-[40%] text-sm xs:text-base md:text-2xl">
-          <span className="font-bold">Hello! I'm Chaitanya Bhargava. </span>I am a Web Developer
-          proficient in Frontend with elementary knowledge of Backend. I enjoy
-          making colourful websites and sharing them. I have worked on several
-          solo as well as team projects in the past with varied tech stacks.
+          <span className="font-bold">Hello! I'm Chaitanya Bhargava. </span>I am
+          a Web Developer proficient in Frontend with elementary knowledge of
+          Backend. I enjoy making colourful websites and sharing them. I have
+          worked on several solo as well as team projects in the past with
+          varied tech stacks.
         </p>
       </div>
       <div className="flex flex-col m-8">
-        <p className="font-bold diff-font text-xl xs:text-2xl md:text-4xl text-center">My Super Powers</p>
+        <p className="font-bold diff-font text-xl xs:text-2xl md:text-4xl text-center">
+          My Super Powers
+        </p>
         <div className="flex flex-col md:flex-row justify-center gap-10 md:gap-40 m-8">
           <div className="flex flex-col">
             <p className="text-base xs:text-xl md:text-2xl font-bold text-center">
               Frontend Development
             </p>
             <div className="grid grid-cols-2 place-items-center p-6">
-              <img src="html5-color.svg" alt="html5" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="css3-color.svg" alt="css3" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="javascript-color.svg" alt="javascript" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="react-color.svg" alt="react" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="nextdotjs-color.svg" alt="nextdotjs" className="white-filter w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="tailwindcss-color.svg" alt="tailwindcss" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="html5-color.svg"
+                alt="html5"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="css3-color.svg"
+                alt="css3"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="javascript-color.svg"
+                alt="javascript"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="react-color.svg"
+                alt="react"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="nextdotjs-color.svg"
+                alt="nextdotjs"
+                className="white-filter w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="tailwindcss-color.svg"
+                alt="tailwindcss"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
             </div>
           </div>
           <div className="flex flex-col">
@@ -38,11 +114,71 @@ const About = () => {
               Backend Development
             </p>
             <div className="grid grid-cols-2 place-items-center p-6">
-              <img src="nodedotjs-color.svg" alt="nodedotjs" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="express-color.svg" alt="express" className="white-filter w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="php-color.svg" alt="php" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="mysql-color.svg" alt="mysql" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="mongodb-color.svg" alt="mongodb" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="nodedotjs-color.svg"
+                alt="nodedotjs"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="express-color.svg"
+                alt="express"
+                className="white-filter w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="php-color.svg"
+                alt="php"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="mysql-color.svg"
+                alt="mysql"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="mongodb-color.svg"
+                alt="mongodb"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
             </div>
           </div>
         </div>
@@ -52,18 +188,104 @@ const About = () => {
               Tools and Frameworks
             </p>
             <div className="grid grid-cols-2 place-items-center p-6">
-              <img src="firebase-color.svg" alt="firebase" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="git-color.svg" alt="git" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="github-color.svg" alt="github" className="white-filter w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="redux-color.svg" alt="redux" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="reactrouter-color.svg" alt="reactrouter" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="firebase-color.svg"
+                alt="firebase"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="git-color.svg"
+                alt="git"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="github-color.svg"
+                alt="github"
+                className="white-filter w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="redux-color.svg"
+                alt="redux"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="reactrouter-color.svg"
+                alt="reactrouter"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
             </div>
           </div>
           <div className="flex flex-col">
-            <p className="text-base xs:text-xl md:text-2xl font-bold text-center">Programming</p>
+            <p className="text-base xs:text-xl md:text-2xl font-bold text-center">
+              Programming
+            </p>
             <div className="grid grid-cols-2 place-items-center p-6">
-              <img src="cplusplus-color.svg" alt="cplusplus" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="python-color.svg" alt="python" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="cplusplus-color.svg"
+                alt="cplusplus"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+              dragConstraints={{
+                top: -25,
+                left: -25,
+                right: 25,
+                bottom: 25,
+              }}
+                src="python-color.svg"
+                alt="python"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
             </div>
           </div>
         </div>

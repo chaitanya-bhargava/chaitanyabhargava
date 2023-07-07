@@ -14,7 +14,7 @@ const Footer = () => {
       <img
         src="logo2.png"
         alt="logo"
-        className="p-2 md:p-4 w-[100px] mx-auto h-auto md:w-auto md:h-[100px] md:my-auto md:mx-0"
+        className="p-2 md:p-4 w-[150px] mx-auto h-auto md:w-auto md:h-[150px] md:my-auto md:mx-0"
       />
       <div className="flex flex-col mt-2 md:mt-6">
         <p className="text-md xs:text-lg font-bold p-2">Explore</p>
@@ -23,7 +23,7 @@ const Footer = () => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={700}
+          duration={2800}
         >
         <p className=" text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">Home</p>
         </Link>
@@ -32,7 +32,7 @@ const Footer = () => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={700}
+          duration={2100}
         >
         <p className=" text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">About</p>
         </Link>
@@ -41,7 +41,7 @@ const Footer = () => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={700}
+          duration={1400}
         >
         <p className=" text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">Projects</p>
         </Link>

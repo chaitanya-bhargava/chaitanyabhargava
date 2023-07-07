@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { Squash as Hamburger } from "hamburger-react";
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   return (
@@ -24,11 +25,11 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             offset={0}
-            duration={700}
+            duration={1400}
           >
             <li className=" p-4  hover:text-[#7EC8E3] duration-400"> Projects </li>
           </Link>
-          <Link to="contact" spy={true} smooth={true} offset={0} duration={700}>
+          <Link to="contact" spy={true} smooth={true} offset={0} duration={2100}>
             <li className=" p-4  hover:text-[#7EC8E3] duration-400"> Contact </li>
           </Link>
         </ul>

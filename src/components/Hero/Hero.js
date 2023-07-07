@@ -5,6 +5,7 @@ import {
   AiFillLinkedin,
   AiOutlineInstagram,
 } from "react-icons/ai";
+
 const Hero = () => {
   return (
     <div id="hero" className=" text-white flex flex-col md:flex-row justify-center items-center mx-auto w-full max-w-[500px] md:max-w-[750px] lg:max-w-[1000px] h-[90vh]">
@@ -29,7 +30,7 @@ const Hero = () => {
         </div>
         <div className="flex items-center mt-6">
           <Link
-            to="projects" spy={true} smooth={true} offset={0} duration={700}
+            to="projects" spy={true} smooth={true} offset={0} duration={1400}
             className="relative inline-flex items-center justify-center px-8 py-3 xs:px-10 xs:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#7EC8E3] rounded-lg group m-4  text-xs xs:text-sm md:text-base hover:scale-110 duration-500"
           >
             <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#79A9F5] rounded-full group-hover:w-56 group-hover:h-56"></span>
