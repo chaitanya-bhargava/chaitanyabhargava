@@ -27,3 +27,7 @@ body{
   background-color: #7d7373;
   border-radius: 22px;
 }
+
+.translate-z{
+  transform: translateZ(100px);
+}

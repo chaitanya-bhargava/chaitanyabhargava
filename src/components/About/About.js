@@ -1,22 +1,3 @@
-import { Icon } from "react-3d-icons";
-import {
-    html5,
-  css3,
-  tailwindcss,
-  javascript,
-  react,
-  nodedotjs,
-  express,
-  php,
-  nextdotjs,
-  python,
-  cplusplus,
-  mysql,
-  mongodb,
-  firebase,
-  git,
-  github,
-} from "react-3d-icons";
 const About = () => {
   return (
     <div
