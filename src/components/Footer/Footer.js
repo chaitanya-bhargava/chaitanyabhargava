@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="text-white flex flex-col md:flex-row justify-evenly bg-[#000300] bg-opacity-80 h-[100vh] md:h-auto border-t border-t-white border-opacity-10 max-w-full mx-auto p-4">
       <img
-        src="logo.png"
+        src="logo2.png"
         alt="logo"
         className="p-2 md:p-4 w-[100px] mx-auto h-auto md:w-auto md:h-[100px] md:my-auto md:mx-0"
       />
