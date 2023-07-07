@@ -29,7 +29,7 @@ const About = () => {
               <img src="css3-color.svg" alt="css3" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
               <img src="javascript-color.svg" alt="javascript" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
               <img src="react-color.svg" alt="react" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="nextdotjs-color.svg" alt="nextdotjs" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
+              <img src="nextdotjs-color.svg" alt="nextdotjs" className="white-filter w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
               <img src="tailwindcss-color.svg" alt="tailwindcss" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
             </div>
           </div>
@@ -39,7 +39,7 @@ const About = () => {
             </p>
             <div className="grid grid-cols-2 place-items-center p-6">
               <img src="nodedotjs-color.svg" alt="nodedotjs" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="express-color.svg" alt="express" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
+              <img src="express-color.svg" alt="express" className="white-filter w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
               <img src="php-color.svg" alt="php" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
               <img src="mysql-color.svg" alt="mysql" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
               <img src="mongodb-color.svg" alt="mongodb" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
@@ -54,7 +54,7 @@ const About = () => {
             <div className="grid grid-cols-2 place-items-center p-6">
               <img src="firebase-color.svg" alt="firebase" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
               <img src="git-color.svg" alt="git" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
-              <img src="github-color.svg" alt="github" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
+              <img src="github-color.svg" alt="github" className="white-filter w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
               <img src="redux-color.svg" alt="redux" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
               <img src="reactrouter-color.svg" alt="reactrouter" className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"/>
             </div>

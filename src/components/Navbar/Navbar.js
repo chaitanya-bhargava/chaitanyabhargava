@@ -10,7 +10,7 @@ const Navbar = () => {
         className="flex justify-between items-center h-28 max-w-[1240px] mx-auto px-4 text-white text-md md:text-xl z-40"
       >
         <img
-          src="logo.png"
+          src="logo2.png"
           alt="logo"
           className=" p-4 w-[100px] xs:w-[120px] md:w-[150px]"
         />

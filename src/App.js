@@ -57,13 +57,13 @@ function App() {
           },
           particles: {
             color: {
-              value: "#846D62",
+              value: "#4B7BF5",
             },
             links: {
-              color: "#846D62",
+              color: "#4B7BF5",
               distance: 100,
               enable: true,
-              opacity: 0.8,
+              opacity: 0.5,
               width: 1,
             },
             collisions: {

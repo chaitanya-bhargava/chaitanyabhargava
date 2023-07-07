@@ -34,3 +34,7 @@ body{
 .translate-z-negative canvas{
   transform: translateZ(-100px);
 }
+
+.white-filter{
+  filter: invert(98%) sepia(3%) saturate(3%) hue-rotate(158deg) brightness(113%) contrast(100%);
+}
