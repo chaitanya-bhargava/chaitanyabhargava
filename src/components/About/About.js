@@ -44,54 +44,12 @@ const About = () => {
               Frontend Development
             </p>
             <div className="grid grid-cols-2 place-items-center p-6">
-              <Icon
-                spin
-                depth={5}
-                file={html5}
-                color={"#E34F26"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
-              <Icon
-                spin
-                depth={5}
-                file={css3}
-                color={"#1572B6"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
-              <Icon
-                spin
-                depth={5}
-                file={javascript}
-                color={"#F7DF1E"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
-              <Icon
-                spin
-                depth={5}
-                file={react}
-                color={"#61DAFB"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
-              <Icon
-                spin
-                depth={5}
-                file={nextdotjs}
-                color={"#ffffff"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
-              <Icon
-                spin
-                depth={5}
-                file={tailwindcss}
-                color={"#06B6D4"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
+              <img src="html5-color.svg" alt="html5" className="w-[60px] h-[60px] m-4"/>
+              <img src="css3-color.svg" alt="css3" className="w-[60px] h-[60px] m-4"/>
+              <img src="javascript-color.svg" alt="javascript" className="w-[60px] h-[60px] m-4"/>
+              <img src="react-color.svg" alt="react" className="w-[60px] h-[60px] m-4"/>
+              <img src="nextdotjs-color.svg" alt="nextdotjs" className="w-[60px] h-[60px] m-4"/>
+              <img src="tailwindcss-color.svg" alt="tailwindcss" className="w-[60px] h-[60px] m-4"/>
             </div>
           </div>
           <div className="flex flex-col">
@@ -99,46 +57,11 @@ const About = () => {
               Backend Development
             </p>
             <div className="grid grid-cols-2 place-items-center p-6">
-              <Icon
-                spin
-                depth={5}
-                file={nodedotjs}
-                color={"#339933"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
-              <Icon
-                spin
-                depth={5}
-                file={express}
-                color={"#ffffff"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
-              <Icon
-                spin
-                depth={5}
-                file={php}
-                color={"#777BB4"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
-              <Icon
-                spin
-                depth={5}
-                file={mysql}
-                color={"#4479A1"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
-              <Icon
-                spin
-                depth={5}
-                file={mongodb}
-                color={"#47A248"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
+              <img src="nodedotjs-color.svg" alt="nodedotjs" className="w-[60px] h-[60px] m-4"/>
+              <img src="express-color.svg" alt="express" className="w-[60px] h-[60px] m-4"/>
+              <img src="php-color.svg" alt="php" className="w-[60px] h-[60px] m-4"/>
+              <img src="mysql-color.svg" alt="mysql" className="w-[60px] h-[60px] m-4"/>
+              <img src="mongodb-color.svg" alt="mongodb" className="w-[60px] h-[60px] m-4"/>
             </div>
           </div>
         </div>
@@ -148,51 +71,18 @@ const About = () => {
               Tools and Frameworks
             </p>
             <div className="grid grid-cols-2 place-items-center p-6">
-              <Icon
-                spin
-                depth={5}
-                file={firebase}
-                color={"#FFCA28"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
-              <Icon
-                spin
-                depth={5}
-                file={git}
-                color={"#F05032"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
-              <Icon
-                spin
-                depth={5}
-                file={github}
-                color={"#ffffff"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
+              <img src="firebase-color.svg" alt="firebase" className="w-[60px] h-[60px] m-4"/>
+              <img src="git-color.svg" alt="git" className="w-[60px] h-[60px] m-4"/>
+              <img src="github-color.svg" alt="github" className="w-[60px] h-[60px] m-4"/>
+              <img src="redux-color.svg" alt="redux" className="w-[60px] h-[60px] m-4"/>
+              <img src="reactrouter-color.svg" alt="reactrouter" className="w-[60px] h-[60px] m-4"/>
             </div>
           </div>
           <div className="flex flex-col">
             <p className="text-2xl font-bold text-center">Programming</p>
             <div className="grid grid-cols-2 place-items-center p-6">
-              <Icon
-                spin
-                depth={5}
-                file={cplusplus}
-                color={"#00599C"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
-              <Icon
-                spin
-                depth={5}
-                file={python}
-                color={"#3776AB"}
-                scale={10}
-                style={{ height: "80px", width: "80px" }}
-              />
+              <img src="cplusplus-color.svg" alt="cplusplus" className="w-[60px] h-[60px] m-4"/>
+              <img src="python-color.svg" alt="python" className="w-[60px] h-[60px] m-4"/>
             </div>
           </div>
         </div>
