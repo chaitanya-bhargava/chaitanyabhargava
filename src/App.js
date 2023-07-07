@@ -9,6 +9,7 @@ import { loadFull } from "tsparticles";
 import { useCallback} from "react";
 import { Toaster } from "react-hot-toast";
 import About from "./components/About/About";
+import AnimatedCursor from "react-animated-cursor"
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -25,6 +26,25 @@ function App() {
   return (
     <div id="app">
       <Toaster/>
+      <AnimatedCursor 
+        trailingSpeed={10}
+        color="0,0,0"
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={1.7}
+        outerAlpha={0}
+        outerStyle={{
+          // border: '2px solid white',
+          backgroundColor: 'white',
+          mixBlendMode: 'exclusion'
+        }}
+        innerStyle={{
+          // border: '2px solid white',
+          backgroundColor: 'white',
+          mixBlendMode: 'exclusion'
+        }}
+      />
       <Particles
         className=" fixed -z-50 translate-z-negative"
         id="tsparticles"
@@ -84,7 +104,7 @@ function App() {
                 enable: true,
                 area: 600,
               },
-              value: 100,
+              value: 80,
             },
             opacity: {
               value: 0.5,

@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="flex items-center mt-6">
           <Link
             to="projects" spy={true} smooth={true} offset={0} duration={700}
-            className="relative inline-flex items-center justify-center px-8 py-3 xs:px-10 xs:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#7EC8E3] rounded-lg group m-4 cursor-pointer text-xs xs:text-sm md:text-base hover:scale-110 duration-500"
+            className="relative inline-flex items-center justify-center px-8 py-3 xs:px-10 xs:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#7EC8E3] rounded-lg group m-4  text-xs xs:text-sm md:text-base hover:scale-110 duration-500"
           >
             <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#79A9F5] rounded-full group-hover:w-56 group-hover:h-56"></span>
             <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
@@ -39,7 +39,7 @@ const Hero = () => {
           <Link
             to="about"
             spy={true} smooth={true} offset={0} duration={700}
-            className="relative inline-flex items-center justify-center px-8 py-3 xs:px-10 xs:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#7EC8E3] rounded-lg group m-4 cursor-pointer text-xs xs:text-sm md:text-base hover:scale-110 duration-500"
+            className="relative inline-flex items-center justify-center px-8 py-3 xs:px-10 xs:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#7EC8E3] rounded-lg group m-4  text-xs xs:text-sm md:text-base hover:scale-110 duration-500"
           >
             <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#79A9F5] rounded-full group-hover:w-56 group-hover:h-56"></span>
             <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
@@ -61,7 +61,7 @@ const Hero = () => {
           >
             <AiFillGithub
               size={40}
-              className=" cursor-pointer hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
+              className="  hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
             />
           </a>
           <a
@@ -71,7 +71,7 @@ const Hero = () => {
           >
             <AiFillLinkedin
               size={40}
-              className=" cursor-pointer hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
+              className="  hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
             />
           </a>
           <a
@@ -81,7 +81,7 @@ const Hero = () => {
           >
             <AiOutlineInstagram
               size={40}
-              className=" cursor-pointer hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
+              className="  hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
             />
           </a>
         </div>

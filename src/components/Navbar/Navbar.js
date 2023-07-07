@@ -15,9 +15,9 @@ const Navbar = () => {
           className=" p-4 w-[100px] xs:w-[120px] md:w-[150px]"
         />
         <ul className=" uppercase hidden md:flex">
-          {/* <Link to="nav" spy={true} smooth={true} offset={0} duration={700}><li className=" p-4 cursor-pointer"> Home </li></Link>  */}
+          {/* <Link to="nav" spy={true} smooth={true} offset={0} duration={700}><li className=" p-4 "> Home </li></Link>  */}
           <Link to="about" spy={true} smooth={true} offset={0} duration={700}>
-            <li className=" p-4 cursor-pointer hover:text-[#7EC8E3] duration-400"> About </li>
+            <li className=" p-4  hover:text-[#7EC8E3] duration-400"> About </li>
           </Link>
           <Link
             to="projects"
@@ -26,13 +26,13 @@ const Navbar = () => {
             offset={0}
             duration={700}
           >
-            <li className=" p-4 cursor-pointer hover:text-[#7EC8E3] duration-400"> Projects </li>
+            <li className=" p-4  hover:text-[#7EC8E3] duration-400"> Projects </li>
           </Link>
           <Link to="contact" spy={true} smooth={true} offset={0} duration={700}>
-            <li className=" p-4 cursor-pointer hover:text-[#7EC8E3] duration-400"> Contact </li>
+            <li className=" p-4  hover:text-[#7EC8E3] duration-400"> Contact </li>
           </Link>
         </ul>
-        <div className="z-50 cursor-pointer block md:hidden">
+        <div className="z-50  block md:hidden">
           <Hamburger toggled={nav} toggle={setNav} size={30} duration={0.5} />
         </div>
 
@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link to="about" spy={true} smooth={true} offset={0} duration={700} onClick={()=>{
                 setNav(false);
               }}>
-              <li className="cursor-pointer p-4 border-b border-b-gray-600 hover:text-[#7EC8E3] duration-400"> About </li>
+              <li className=" p-4 border-b border-b-gray-600 hover:text-[#7EC8E3] duration-400"> About </li>
             </Link>
             <Link
               to="projects"
@@ -60,7 +60,7 @@ const Navbar = () => {
                 setNav(false);
               }}
             >
-              <li className="cursor-pointer p-4 border-b border-b-gray-600 hover:text-[#7EC8E3] duration-400"> Projects </li>
+              <li className=" p-4 border-b border-b-gray-600 hover:text-[#7EC8E3] duration-400"> Projects </li>
             </Link>
             <Link
               to="contact"
@@ -72,7 +72,7 @@ const Navbar = () => {
                 setNav(false);
               }}
             >
-              <li className="cursor-pointer p-4 border-b border-b-gray-600 hover:text-[#7EC8E3] duration-400"> Contact </li>
+              <li className=" p-4 border-b border-b-gray-600 hover:text-[#7EC8E3] duration-400"> Contact </li>
             </Link>
           </ul>
         </div>

@@ -57,7 +57,7 @@ const Projects = () => {
                     rel="noreferrer"
                     >
                     <FaGithubSquare
-                      className="cursor-pointer hover:scale-110 duration-500 w-[45px] h-[45px] lg:w-[65px] lg:h-[65px]"
+                      className=" hover:scale-110 duration-500 w-[45px] h-[45px] lg:w-[65px] lg:h-[65px]"
                       />
                   </a>
                   {item.website && (
@@ -65,7 +65,7 @@ const Projects = () => {
                     href={item.websiteLink}
                     target="_blank"
                     rel="noreferrer"
-                    class="relative text-xs lg:w-[180px] lg:text-base inline-flex items-center justify-center px-8 py-3 lg:px-10 lg:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#7EC8E3] rounded-lg group m-4 hover:scale-110 duration-500 cursor-pointer"
+                    class="relative text-xs lg:w-[180px] lg:text-base inline-flex items-center justify-center px-8 py-3 lg:px-10 lg:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#7EC8E3] rounded-lg group m-4 hover:scale-110 duration-500 "
                     >
                       <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#79A9F5] rounded-full group-hover:w-56 group-hover:h-56"></span>
                       <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>

@@ -25,7 +25,7 @@ const Footer = () => {
           offset={0}
           duration={700}
         >
-        <p className="cursor-pointer text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">Home</p>
+        <p className=" text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">Home</p>
         </Link>
         <Link
           to="about"
@@ -34,7 +34,7 @@ const Footer = () => {
           offset={0}
           duration={700}
         >
-        <p className="cursor-pointer text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">About</p>
+        <p className=" text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">About</p>
         </Link>
         <Link
           to="projects"
@@ -43,7 +43,7 @@ const Footer = () => {
           offset={0}
           duration={700}
         >
-        <p className="cursor-pointer text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">Projects</p>
+        <p className=" text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">Projects</p>
         </Link>
         <Link
           to="contact"
@@ -52,7 +52,7 @@ const Footer = () => {
           offset={0}
           duration={700}
         >
-        <p className="cursor-pointer text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">Contact</p>
+        <p className=" text-sm xs:text-md p-2 hover:text-[#7EC8E3] duration-400">Contact</p>
         </Link>
       </div>
       <div className="flex flex-col mt-2 md:mt-6">
@@ -82,7 +82,7 @@ const Footer = () => {
           >
             <AiFillGithub
               size={40}
-              className="m-2 cursor-pointer hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
+              className="m-2  hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
             />
           </a>
           <a
@@ -92,7 +92,7 @@ const Footer = () => {
           >
             <AiFillLinkedin
               size={40}
-              className="m-2 cursor-pointer hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
+              className="m-2  hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
             />
           </a>
           <a
@@ -102,7 +102,7 @@ const Footer = () => {
           >
             <AiOutlineInstagram
               size={40}
-              className="m-2 cursor-pointer hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
+              className="m-2  hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
             />
           </a>
         </div>
