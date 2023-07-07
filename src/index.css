@@ -31,3 +31,6 @@ body{
 .translate-z{
   transform: translateZ(100px);
 }
+.translate-z-negative canvas{
+  transform: translateZ(-100px);
+}

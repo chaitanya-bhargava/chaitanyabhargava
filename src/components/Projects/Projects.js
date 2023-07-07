@@ -29,7 +29,7 @@ const Projects = () => {
   ];
   return (
     <div id="projects" className="flex flex-col items-center text-white">
-      <p className="text-4xl font-bold uppercase p-4 m-4">Projects</p>
+      <p className="text-2xl md:text-4xl font-bold uppercase p-4 m-4">Projects</p>
       <div className="grid md:block">
         {projects.map((item) => {
           return (

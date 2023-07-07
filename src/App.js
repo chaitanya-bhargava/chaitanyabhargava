@@ -26,7 +26,7 @@ function App() {
     <div id="app">
       <Toaster/>
       <Particles
-        className=" fixed -z-50"
+        className=" fixed -z-50 translate-z-negative"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
