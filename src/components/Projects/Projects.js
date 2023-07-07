@@ -5,6 +5,7 @@ const Projects = () => {
     {
       title: "Media Player",
       desc: "Fully responsive React App built using the concepts of React, React Router, Redux and Firebase is used as a Backend and for Authentication. A user can store and play their favourite youtube videos through this application and also look at the videos played in the past.",
+      src:"proj1.png",
       website: true,
       websiteLink: "https://media-player-react-app.vercel.app/",
       githubLink: "https://github.com/chaitanya-bhargava/MediaPlayerApp",
@@ -12,15 +13,18 @@ const Projects = () => {
     {
       title: "Rick and Morty Wiki",
       desc: "Fully responsive multi-page React web app which uses Rest API to fetch info about the characters, locations and episodes of the popular show Rick and Morty.",
+      src:"proj2.png",
       website: true,
       websiteLink: "https://rick-and-morty-react-gules.vercel.app/",
       githubLink: "https://github.com/chaitanya-bhargava/RickAndMortyReact",
     },
     {
-      title: "Instagram Clone App",
-      desc: "I created an Instagram clone app written in Jetpack Compose with all the concepts taught to us in various lectures held by the GDSC NSUT team. Jetpack Compose is an upcoming toolkit in Kotlin used for building native UI for apps.",
-      website: false,
-      githubLink: "https://github.com/chaitanya-bhargava/InstagramClone",
+      title: "Weather.io",
+      desc: "This is a React.js web application which shows the current weather data of any city/state. It has been made using the OpenWeatherMap API.",
+      src:"proj3.png",
+      website: true,
+      websiteLink: "https://weather-io-react.vercel.app/",
+      githubLink: "https://github.com/chaitanya-bhargava/Weather.io",
     },
   ];
   return (
@@ -38,7 +42,7 @@ const Projects = () => {
               transitionSpeed={800}
             >
               <img
-                src="proj1.png"
+                src={item.src}
                 className="h-auto md:h-[180px] lg:h-[250px] m-2 md:m-4 rounded-2xl z-50"
                 alt="thumb"
               />

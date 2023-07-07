@@ -37,7 +37,8 @@ const Hero = () => {
             <span class="relative">My Projects</span>
           </Link>
           <Link
-            to="projects"
+            to="about"
+            spy={true} smooth={true} offset={0} duration={700}
             className="relative inline-flex items-center justify-center px-8 py-3 xs:px-10 xs:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#A8A29C] rounded-lg group m-4 cursor-pointer text-xs xs:text-sm md:text-base hover:scale-110 duration-500"
           >
             <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#846D62] rounded-full group-hover:w-56 group-hover:h-56"></span>

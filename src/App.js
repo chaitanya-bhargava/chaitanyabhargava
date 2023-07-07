@@ -8,6 +8,7 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback} from "react";
 import { Toaster } from "react-hot-toast";
+import About from "./components/About/About";
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -100,6 +101,7 @@ function App() {
       />
       <Navbar />
       <Hero />
+      <About/>
       <Projects />
       <Contact />
       <Footer />

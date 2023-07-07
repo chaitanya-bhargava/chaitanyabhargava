@@ -16,6 +16,9 @@ const Navbar = () => {
         />
         <ul className=" uppercase hidden md:flex">
           {/* <Link to="nav" spy={true} smooth={true} offset={0} duration={700}><li className=" p-4 cursor-pointer"> Home </li></Link>  */}
+          <Link to="about" spy={true} smooth={true} offset={0} duration={700}>
+            <li className=" p-4 cursor-pointer"> About </li>
+          </Link>
           <Link
             to="projects"
             spy={true}
@@ -24,9 +27,6 @@ const Navbar = () => {
             duration={700}
           >
             <li className=" p-4 cursor-pointer"> Projects </li>
-          </Link>
-          <Link to="hero" spy={true} smooth={true} offset={0} duration={700}>
-            <li className=" p-4 cursor-pointer"> About </li>
           </Link>
           <Link to="contact" spy={true} smooth={true} offset={0} duration={700}>
             <li className=" p-4 cursor-pointer"> Contact </li>
@@ -45,6 +45,11 @@ const Navbar = () => {
         >
           <ul className="uppercase p-4">
             {/* <li className=" p-4 border-b border-b-gray-600"> Home </li> */}
+            <Link to="about" spy={true} smooth={true} offset={0} duration={700} onClick={()=>{
+                setNav(false);
+              }}>
+              <li className="cursor-pointer p-4 border-b border-b-gray-600"> About </li>
+            </Link>
             <Link
               to="projects"
               spy={true}
@@ -56,11 +61,6 @@ const Navbar = () => {
               }}
             >
               <li className="cursor-pointer p-4 border-b border-b-gray-600"> Projects </li>
-            </Link>
-            <Link to="about" spy={true} smooth={true} offset={0} duration={700} onClick={()=>{
-                setNav(false);
-              }}>
-              <li className="cursor-pointer p-4 border-b border-b-gray-600"> About </li>
             </Link>
             <Link
               to="contact"

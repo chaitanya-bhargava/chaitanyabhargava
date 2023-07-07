@@ -28,15 +28,6 @@ const Footer = () => {
         <p className="cursor-pointer text-sm xs:text-md p-2">Home</p>
         </Link>
         <Link
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={700}
-        >
-        <p className="cursor-pointer text-sm xs:text-md p-2">Projects</p>
-        </Link>
-        <Link
           to="about"
           spy={true}
           smooth={true}
@@ -44,6 +35,15 @@ const Footer = () => {
           duration={700}
         >
         <p className="cursor-pointer text-sm xs:text-md p-2">About</p>
+        </Link>
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={700}
+        >
+        <p className="cursor-pointer text-sm xs:text-md p-2">Projects</p>
         </Link>
         <Link
           to="contact"
