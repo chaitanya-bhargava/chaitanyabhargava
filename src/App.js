@@ -96,15 +96,15 @@ function App() {
                 default: "bounce",
               },
               random: true,
-              speed: 2,
+              speed: 0.5,
               straight: false,
             },
             number: {
               density: {
                 enable: true,
-                area: 600,
+                area: 300,
               },
-              value: 80,
+              value: 40,
             },
             opacity: {
               value: 0.5,
