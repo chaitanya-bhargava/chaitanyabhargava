@@ -8,18 +8,20 @@ const About = () => {
       <div className="flex flex-col xs:flex-row justify-center items-center gap-8 m-8">
         <p className="text-center xs:text-right diff-font font-bold text-2xl xs:text-4xl md:text-6xl">
           About <span className="inline xs:hidden">Me</span>
-          <br className="hidden xs:block"/>
+          <br className="hidden xs:block" />
           <span className="hidden xs:block">Me</span>
         </p>
         <p className="w-full xs:w-[60%] lg:w-[50%] text-sm xs:text-base md:text-2xl">
           <span className="font-bold">Hello! I'm Chaitanya Bhargava, </span>a
-          passionate Web Developer specializing in Frontend development with a
-          solid foundation in Backend technologies. With a keen eye for design
-          and a love for vibrant websites, I strive to create captivating online
-          experiences that leave a lasting impression. <br/> <br/> Moving forward, I'm excited to expand my horizons beyond web
-          development. I have a keen interest in exploring game development. Additionally, I'm eager to explore the integration of
-          machine learning technologies into my projects, pushing the boundaries
-          of what's possible in web applications.
+          passionate Web Developer specializing in Frontend development with
+          elemntary knowledge in Backend technologies. With a keen eye for
+          design and a love for vibrant websites, I aim to create captivating
+          websites that users enjoy. <br /> <br />{" "}
+          Moving forward, I'm excited to expand my horizons beyond web
+          development. I have an intent of exploring game development.
+          Additionally, I'm eager to learn the integration of machine learning
+          technologies into my projects, pushing the boundaries of what's
+          possible in web applications.
         </p>
       </div>
       <div className="flex flex-col m-8">
