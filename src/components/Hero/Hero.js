@@ -5,6 +5,9 @@ import {
   AiFillLinkedin,
   AiOutlineInstagram,
 } from "react-icons/ai";
+import {
+  RiTwitterXFill
+} from "react-icons/ri";
 
 const Hero = () => {
   return (
@@ -33,18 +36,18 @@ const Hero = () => {
             to="projects" spy={true} smooth={true} offset={0} duration={1400}
             className="relative inline-flex items-center justify-center px-8 py-3 xs:px-10 xs:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#7EC8E3] rounded-lg group m-4  text-xs xs:text-sm md:text-base hover:scale-110 duration-500"
           >
-            <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#79A9F5] rounded-full group-hover:w-56 group-hover:h-56"></span>
-            <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
-            <span class="relative">My Projects</span>
+            <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#79A9F5] rounded-full group-hover:w-56 group-hover:h-56"></span>
+            <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+            <span className="relative">My Projects</span>
           </Link>
           <Link
             to="about"
             spy={true} smooth={true} offset={0} duration={700}
             className="relative inline-flex items-center justify-center px-8 py-3 xs:px-10 xs:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#7EC8E3] rounded-lg group m-4  text-xs xs:text-sm md:text-base hover:scale-110 duration-500"
           >
-            <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#79A9F5] rounded-full group-hover:w-56 group-hover:h-56"></span>
-            <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
-            <span class="relative">About Me</span>
+            <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#79A9F5] rounded-full group-hover:w-56 group-hover:h-56"></span>
+            <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+            <span className="relative">About Me</span>
           </Link>
         </div>
       </div>
@@ -83,6 +86,16 @@ const Hero = () => {
             <AiOutlineInstagram
               size={40}
               className="  hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
+            />
+          </a>
+          <a
+            href="https://x.com/cheenu_123"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <RiTwitterXFill
+              size={40}
+              className="m-2  hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
             />
           </a>
         </div>

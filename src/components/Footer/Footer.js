@@ -5,6 +5,9 @@ import {
   AiOutlineMail,
   AiOutlinePhone,
 } from "react-icons/ai";
+import {
+  RiTwitterXFill
+} from "react-icons/ri";
 import { TfiLocationPin } from "react-icons/tfi";
 import { Link } from "react-scroll";
 
@@ -101,6 +104,16 @@ const Footer = () => {
             rel="noreferrer"
           >
             <AiOutlineInstagram
+              size={40}
+              className="m-2  hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
+            />
+          </a>
+          <a
+            href="https://x.com/cheenu_123"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <RiTwitterXFill
               size={40}
               className="m-2  hover:scale-125 ease-in-out duration-500 w-[30px] h-[30px] xs:w-[40px] xs:h-[40px]"
             />

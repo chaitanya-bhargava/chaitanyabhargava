@@ -12,10 +12,19 @@ const Projects = () => {
       githubLink: "https://github.com/chaitanya-bhargava/MediaPlayerApp",
     },
     {
+      title: "Social Sheets",
+      desc: "Social Sheets, is a collaborative, web-based spreadsheet application designed for teams and individuals who need to work together in real-time.",
+      techStack: "React, CSS, Supabase",
+      src: "proj2.png",
+      website: true,
+      websiteLink: "https://social-sheets.vercel.app/",
+      githubLink: "https://github.com/chaitanya-bhargava/SocialSheets",
+    },
+    {
       title: "Rick and Morty Wiki",
       desc: "Rick and Morty Wiki uses the Fetch API to fetch and display information about the characters, locations and episodes of the popular show Rick and Morty (one of my favourites).",
       techStack: "React, CSS, React Router",
-      src: "proj2.png",
+      src: "proj3.png",
       website: true,
       websiteLink: "https://rick-and-morty-react-gules.vercel.app/",
       githubLink: "https://github.com/chaitanya-bhargava/RickAndMortyReact",
@@ -24,7 +33,7 @@ const Projects = () => {
       title: "Weather.io",
       desc: "Weather.io is a weather app which displays the current weather of any city/state fetched from the OpenWeatherMap API. It is unique as it also displays the population of capital cities.",
       techStack: "React, CSS",
-      src: "proj3.png",
+      src: "proj4.png",
       website: true,
       websiteLink: "https://weather-io-react.vercel.app/",
       githubLink: "https://github.com/chaitanya-bhargava/Weather.io",
@@ -38,7 +47,7 @@ const Projects = () => {
       <div className="grid md:block">
         {projects.map((item) => {
           return (
-            <div className="translate-z">
+            <div key={item.title} className="translate-z">
               <Tilt
                 tiltMaxAngleX={15}
                 tiltMaxAngleY={10}
@@ -76,11 +85,11 @@ const Projects = () => {
                         href={item.websiteLink}
                         target="_blank"
                         rel="noreferrer"
-                        class="relative text-xs lg:w-[180px] lg:text-base inline-flex items-center justify-center px-8 py-3 lg:px-10 lg:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#7EC8E3] rounded-lg group m-4 hover:scale-110 duration-500 "
+                        className="relative text-xs lg:w-[180px] lg:text-base inline-flex items-center justify-center px-8 py-3 lg:px-10 lg:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#7EC8E3] rounded-lg group m-4 hover:scale-110 duration-500 "
                       >
-                        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#79A9F5] rounded-full group-hover:w-56 group-hover:h-56"></span>
-                        <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
-                        <span class="relative">View Website</span>
+                        <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#79A9F5] rounded-full group-hover:w-56 group-hover:h-56"></span>
+                        <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                        <span className="relative">View Website</span>
                       </a>
                     )}
                   </div>
