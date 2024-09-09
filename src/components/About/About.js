@@ -112,6 +112,45 @@ const About = () => {
                 alt="tailwindcss"
                 className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
               />
+              <motion.img
+                drag
+                dragSnapToOrigin
+                dragConstraints={{
+                  top: -25,
+                  left: -25,
+                  right: 25,
+                  bottom: 25,
+                }}
+                src="redux-color.svg"
+                alt="redux"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+                dragConstraints={{
+                  top: -25,
+                  left: -25,
+                  right: 25,
+                  bottom: 25,
+                }}
+                src="reactrouter-color.svg"
+                alt="reactrouter"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+                dragConstraints={{
+                  top: -25,
+                  left: -25,
+                  right: 25,
+                  bottom: 25,
+                }}
+                src="mui-color.svg"
+                alt="mui"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
             </div>
           </div>
           <div className="flex flex-col">
@@ -215,6 +254,32 @@ const About = () => {
                   right: 25,
                   bottom: 25,
                 }}
+                src="supabase-color.svg"
+                alt="supabase"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+                dragConstraints={{
+                  top: -25,
+                  left: -25,
+                  right: 25,
+                  bottom: 25,
+                }}
+                src="docker-color.svg"
+                alt="docker"
+                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
+              />
+              <motion.img
+                drag
+                dragSnapToOrigin
+                dragConstraints={{
+                  top: -25,
+                  left: -25,
+                  right: 25,
+                  bottom: 25,
+                }}
                 src="git-color.svg"
                 alt="git"
                 className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
@@ -231,32 +296,6 @@ const About = () => {
                 src="github-color.svg"
                 alt="github"
                 className="white-filter w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
-              />
-              <motion.img
-                drag
-                dragSnapToOrigin
-                dragConstraints={{
-                  top: -25,
-                  left: -25,
-                  right: 25,
-                  bottom: 25,
-                }}
-                src="redux-color.svg"
-                alt="redux"
-                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
-              />
-              <motion.img
-                drag
-                dragSnapToOrigin
-                dragConstraints={{
-                  top: -25,
-                  left: -25,
-                  right: 25,
-                  bottom: 25,
-                }}
-                src="reactrouter-color.svg"
-                alt="reactrouter"
-                className="w-[45px] h-[45px] xs:w-[60px] xs:h-[60px] m-4"
               />
             </div>
           </div>
