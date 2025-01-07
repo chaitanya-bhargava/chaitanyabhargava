@@ -109,7 +109,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://x.com/cheenu_123"
+            href="https://x.com/cheenudotdev"
             target="_blank"
             rel="noreferrer"
           >
