@@ -69,7 +69,7 @@ const Projects = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6 }}
-      className="flex flex-col items-center text-white py-16 md:py-24"
+      className="flex flex-col items-center text-white py-16 md:py-24 w-full max-w-[1600px] mx-auto"
     >
       <p className="text-2xl diff-font md:text-4xl font-bold uppercase p-4 m-4">
         Projects
