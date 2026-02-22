@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import { Squash as Hamburger } from "hamburger-react";
 import { motion, useScroll, useSpring } from "framer-motion";
