@@ -1,11 +1,33 @@
-import { FaGithubSquare } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
+
 const Projects = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const projects = [
+    {
+      title: "Quest Log",
+      desc: "QuestLog is a video game discovery and tracking platform. It lets users browse games by genre, search for titles, and organize them into personal shelves — Played, Currently Playing, and Want to Play.",
+      techStack: "Next.js, Tailwind CSS, shadcn/ui, Go, PostgreSQL",
+      src: "proj5.png",
+      website: true,
+      websiteLink: "https://questlog.fun/",
+      githubLink: "https://github.com/chaitanya-bhargava/QuestLog",
+      featured: true,
+    },
     {
       title: "Media Player",
       desc: "Media Player can be used to store and play your favourite Youtube videos but watch out as the history will be tracked (It can be deleted). It is fully responsive and has eye-pleasing UI elements.",
-      techStack: "React, CSS, Firebase, Redux, React Router",
+      techStack: "React, Tailwind CSS, shadcn/ui, Firebase",
       src: "proj1.png",
       website: true,
       websiteLink: "https://media-player-react-app.vercel.app/",
@@ -14,7 +36,7 @@ const Projects = () => {
     {
       title: "Social Sheets",
       desc: "Social Sheets, is a collaborative, web-based spreadsheet application designed for teams and individuals who need to work together in real-time.",
-      techStack: "React, CSS, Supabase",
+      techStack: "React, Supabase",
       src: "proj2.png",
       website: true,
       websiteLink: "https://social-sheets.vercel.app/",
@@ -23,7 +45,7 @@ const Projects = () => {
     {
       title: "Rick and Morty Wiki",
       desc: "Rick and Morty Wiki uses the Fetch API to fetch and display information about the characters, locations and episodes of the popular show Rick and Morty (one of my favourites).",
-      techStack: "React, CSS, React Router",
+      techStack: "React",
       src: "proj3.png",
       website: true,
       websiteLink: "https://rick-and-morty-react-gules.vercel.app/",
@@ -32,74 +54,116 @@ const Projects = () => {
     {
       title: "Weather.io",
       desc: "Weather.io is a weather app which displays the current weather of any city/state fetched from the OpenWeatherMap API. It is unique as it also displays the population of capital cities.",
-      techStack: "React, CSS",
+      techStack: "React",
       src: "proj4.png",
       website: true,
       websiteLink: "https://weather-io-react.vercel.app/",
       githubLink: "https://github.com/chaitanya-bhargava/Weather.io",
     },
   ];
+
   return (
-    <div id="projects" className="flex flex-col items-center text-white">
+    <motion.div
+      id="projects"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6 }}
+      className="flex flex-col items-center text-white py-16 md:py-24"
+    >
       <p className="text-2xl diff-font md:text-4xl font-bold uppercase p-4 m-4">
         Projects
       </p>
-      <div className="grid md:block">
-        {projects.map((item) => {
-          return (
-            <div key={item.title} className="translate-z">
-              <Tilt
-                tiltMaxAngleX={15}
-                tiltMaxAngleY={10}
-                scale={1}
-                perspective={4000}
-                className="relative flex flex-col md:flex-row h-auto md:h-[250px] lg:h-[300px] w-[90%] md:w-[95%] max-w-[1400px] mx-auto bg-[#7EC8E3] rounded-lg bg-opacity-[0.1] justify-center border border-white border-opacity-20 items-center p-2 m-6"
-                transitionSpeed={800}
-              >
+      <div className="w-full">
+        {projects.map((item, index) => (
+          <motion.div
+            key={item.title}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="translate-z"
+          >
+            <Tilt
+              tiltEnable={!isMobile}
+              tiltMaxAngleX={15}
+              tiltMaxAngleY={10}
+              scale={1}
+              perspective={4000}
+              className={`group relative overflow-hidden flex flex-col ${
+                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              } w-[90%] md:w-[95%] max-w-[1400px] mx-auto bg-gradient-to-br from-[#0a0a2e]/60 via-[#000300]/80 to-[#0d1117]/60 rounded-lg border border-white border-opacity-20 hover:border-[#7EC8E3]/40 hover:shadow-[0_0_25px_rgba(126,200,227,0.15)] items-center m-4 md:m-6 transition-all duration-500`}
+              transitionSpeed={800}
+            >
+              <div
+                className={`absolute ${
+                  index % 2 === 0 ? "md:left-0" : "md:right-0"
+                } top-0 left-0 h-[3px] w-full md:h-full md:w-[3px] bg-gradient-to-r md:bg-gradient-to-b from-[#7EC8E3]/60 via-[#79A9F5]/40 to-transparent`}
+              />
+              <span className="absolute top-3 right-4 text-5xl md:text-7xl font-bold text-white opacity-[0.06] z-20 select-none diff-font pointer-events-none">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              {item.featured && (
+                <span className="absolute top-3 left-3 bg-[#7EC8E3] text-black text-[10px] xs:text-xs font-bold px-3 py-1 rounded-full z-20">
+                  Featured
+                </span>
+              )}
+              <div className="relative overflow-hidden rounded-xl shrink-0 m-3 md:m-4 w-[calc(100%-24px)] md:w-[300px] lg:w-[420px]">
                 <img
                   src={item.src}
-                  className="h-auto md:h-[180px] lg:h-[250px] m-2 md:m-4 rounded-2xl z-50"
-                  alt="thumb"
+                  className="w-full h-[160px] xs:h-[200px] md:h-[180px] lg:h-[250px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  alt={item.title}
                 />
-                <div className=" flex flex-col justify-start z-50">
-                  <h3 className="my-2 md:mb-1 lg:mb-2 text-l md:text-l min-[600px]:text-2xl lg:text-2xl font-bold">
+              </div>
+              <div className="flex flex-col justify-between z-10 p-3 md:p-5 flex-1">
+                <div>
+                  <h3 className="mb-2 text-lg min-[600px]:text-2xl lg:text-2xl font-bold">
                     {item.title}
                   </h3>
-                  <p className="w-full h-[110px] md:h-[120] md:w-[90%] text-sm min-[600px]:text-base md:text-sm lg:text-base md:mb-5 lg:mb-24">
+                  <p className="text-sm min-[600px]:text-base md:text-sm lg:text-base text-gray-300">
                     {item.desc}
                   </p>
-                  <p className="md:absolute md:bottom-14 lg:bottom-20 my-3 text-sm min-[600px]:text-base md:text-sm lg:text-base">
-                    <span className="font-bold">Tech Stack: </span>
-                    {item.techStack}
-                  </p>
-                  <div
-                    className={`md:absolute ${
-                      item.website ? "md:bottom-2" : "my-3 md:bottom-3"
-                    }  flex justify-center md:justify-bold items-center`}
-                  >
-                    <a href={item.githubLink} target="_blank" rel="noreferrer">
-                      <FaGithubSquare className=" hover:scale-110 duration-500 w-[45px] h-[45px] lg:w-[65px] lg:h-[65px]" />
+                </div>
+                <div>
+                  <div className="flex flex-wrap gap-2 my-4">
+                    {item.techStack.split(", ").map((tech) => (
+                      <span
+                        key={tech}
+                        className="text-xs bg-[#7EC8E3] bg-opacity-20 text-[#7EC8E3] px-2 py-1 rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <a
+                      href={item.githubLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center gap-2 text-xs lg:text-sm text-white font-semibold border border-white border-opacity-20 rounded-lg px-5 py-2.5 lg:px-6 lg:py-3 flex-1 md:flex-none hover:bg-white hover:bg-opacity-5 hover:scale-105 transition-all duration-300"
+                    >
+                      <FiGithub className="w-4 h-4" />
+                      GitHub
                     </a>
                     {item.website && (
                       <a
                         href={item.websiteLink}
                         target="_blank"
                         rel="noreferrer"
-                        className="relative text-xs lg:w-[180px] lg:text-base inline-flex items-center justify-center px-8 py-3 lg:px-10 lg:py-4 overflow-hidden tracking-tighter text-black font-bold bg-[#7EC8E3] rounded-lg group m-4 hover:scale-110 duration-500 "
+                        className="inline-flex items-center justify-center gap-2 text-xs lg:text-sm text-[#7EC8E3] font-semibold border border-[#7EC8E3] border-opacity-40 rounded-lg px-5 py-2.5 lg:px-6 lg:py-3 flex-1 md:flex-none hover:bg-[#7EC8E3] hover:bg-opacity-10 hover:scale-105 transition-all duration-300"
                       >
-                        <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#79A9F5] rounded-full group-hover:w-56 group-hover:h-56"></span>
-                        <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
-                        <span className="relative">View Website</span>
+                        View Website
+                        <FiExternalLink className="w-3 h-3 lg:w-4 lg:h-4" />
                       </a>
                     )}
                   </div>
                 </div>
-              </Tilt>
-            </div>
-          );
-        })}
+              </div>
+            </Tilt>
+          </motion.div>
+        ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

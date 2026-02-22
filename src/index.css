@@ -5,17 +5,17 @@
 
 body{
   background-color: black;
-  height: 100%;
+  min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
 #app{
-  height: 100%;
+  min-height: 100vh;
 }
 
 #root{
-  height: 100%;
+  min-height: 100vh;
 }
 
 *::-webkit-scrollbar {
@@ -42,7 +42,29 @@ body{
   filter: invert(98%) sepia(3%) saturate(3%) hue-rotate(158deg) brightness(113%) contrast(100%);
 }
 
-.comic{
+.diff-font{
   font-family: 'Raleway', sans-serif;
+}
 
+.shimmer-text{
+  background: linear-gradient(90deg, #7EC8E3, #79A9F5, #7EC8E3, #b4a0e8, #7EC8E3);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s ease-in-out infinite;
+}
+
+@keyframes shimmer{
+  0%, 100%{ background-position: 0% 50%; }
+  50%{ background-position: 100% 50%; }
+}
+
+.scroll-progress{
+  transform-origin: left;
+}
+
+@keyframes slideIn{
+  from{ transform: translateX(100%); }
+  to{ transform: translateX(0); }
 }
